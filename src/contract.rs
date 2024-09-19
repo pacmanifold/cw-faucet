@@ -1,9 +1,7 @@
-use std::sync::Arc;
-
 #[cfg(not(feature = "library"))]
 use cosmwasm_std::entry_point;
 use cosmwasm_std::{
-    coin, to_json_binary, BankMsg, Binary, Coin, Deps, DepsMut, Env, Event, MessageInfo, Response,
+    coin, to_json_binary, BankMsg, Binary, Deps, DepsMut, Env, Event, MessageInfo, Response,
     StdResult,
 };
 use cw_ownable::{assert_owner, get_ownership, update_ownership};
